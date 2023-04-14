@@ -26,22 +26,6 @@ local MWindow = Rayfield:CreateWindow({
 	}
 })
 
-local GLTab = MWindow:CreateTab("Game Loader", 4483362458) -- Title, Image
-
-local Label = GLTab:CreateLabel("Loads Scripts For Many Games In One Press")
-
-local GLButton = GLTab:CreateButton({
-	Name = "Script Loader",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/SatisfactionModder/S-U/main/GameLoader.lua"))()
-	end,
-})
-
-local Paragraph = GLTab:CreateParagraph({Title = "Supported Games", Content = "Adopt Me,BABFT,Be A Parkour Ninja,Epic Minigames,MM2,Texting Simulator"})
-
-
-
-
 
 
 local UTTab = MWindow:CreateTab("Utilities", 4483362458)
@@ -53,19 +37,14 @@ local AKButton = UTTab:CreateButton({
 	end,
 })
 
-local FSButton = UTTab:CreateButton({
-	Name = "Frosthook Spy",
+local OwlButton = UTTab:CreateButton({
+	Name = "Owl Hub",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/SatisfactionModder/S-U/main/FrostHook.lua"))()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 	end,
 })
 
-local SSButton = UTTab:CreateButton({
-	Name = "Simple Spy",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/SatisfactionModder/S-U/main/SS.lua"))()
-	end,
-})
+
 
 local INFButton = UTTab:CreateButton({
 	Name = "Infinite Yield",
